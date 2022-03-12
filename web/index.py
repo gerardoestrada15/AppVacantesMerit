@@ -6,6 +6,7 @@ app=Flask(__name__)
 
 def hola():
     return render_template('home.html')
+    
 
 @app.route('/about')
 def about():

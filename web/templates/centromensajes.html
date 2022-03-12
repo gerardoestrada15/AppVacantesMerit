@@ -1,7 +1,28 @@
 {%extends "layout.html" %}
 
 {% block content%}
-
+<div class="gap-4">
 <h1>Centro De Mensajes</h1>
+</div>
+<div class="d-grid gap-5 col-2  p-3 mb-5 bg-transparent position-absolute top-50 start-15 translate-middle">
+    <button class="btn btn-light gap-4" type="button">Agregar Respuestas</button>
+    <button class="btn btn-light" type="button">Eliminar Respuestas</button>
+    <button class="btn btn-light" type="button">Editar Respuestas</button>
+  </div>
+
+
+
+  <div class="list-group d-grid gap-0 col-6 caption-top position-absolute top-50 start-50 translate-middle w-25 p-3 h-75 table-secondary">
+      <caption>Respuestas Existentes</caption>
+    <a href="#" class="list-group-item alig-item-right list-group-item-action" aria-current="true">Hola Juan, En este momento tu kardex no tiene el perfil que buscamos. Te agradecemos…
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">Hola Juan, Nos complace informarte que te haremos una entrevista próximamente
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">Hola Juan, Tu registro de  puntualidad no te permite aplicar para este puesto 
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">Hola Juan, Tu historial académico no te califica para este puesto. 
+    </a>
+  </div>
+</div>
 
 {%endblock%}

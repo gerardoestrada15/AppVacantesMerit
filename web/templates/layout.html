@@ -9,28 +9,28 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/main.css') }}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light nav-tab "style="background-color: #dcc594;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">Sistema de Control de Vacantes</a>
+          <a class="navbar-brand" href="/"><img src="Merit-Medical.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                <a class="nav-link active text-dark" aria-current="page" href="{{ url_for('hola') }}">Mensajes a Postulantes</a>
+              </li>
+              <li class="nav-tav">
+                    <a class="nav-link text-dark" href="{{ url_for('about') }}">Administrar Vacantes</a>
               </li>
               <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('about') }}">Administrar Vacantes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('admincandidatos') }}">Administrar Candidatos</a>
+                <a class="nav-link text-dark" href="{{ url_for('admincandidatos') }}">Administrar Candidatos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('centro') }}">Centro de Mensajes</a>
+            <a class="nav-link text-dark" href="{{ url_for('centro') }}">Centro de Mensajes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('actividades') }}">Actividad Reciente</a>
+        <a class="nav-link text-dark" href="{{ url_for('actividades') }}">Actividad Reciente</a>
   </li>
             
             </ul>
