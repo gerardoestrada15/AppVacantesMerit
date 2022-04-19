@@ -18,10 +18,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active text-dark" aria-current="page" href="{{ url_for('hola') }}">Mensajes a Postulantes</a>
+                <a class="nav-link active text-dark" aria-current="page" method="POST" href="{{ url_for('hola') }}">Login</a>
               </li>
               <li class="nav-tav">
-                    <a class="nav-link text-dark" href="{{ url_for('about') }}">Administrar Vacantes</a>
+                    <a class="nav-link text-dark" href="{{ url_for('adminvacantes') }}">Administrar Vacantes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-dark" href="{{ url_for('admincandidatos') }}">Administrar Candidatos</a>
@@ -38,6 +38,7 @@
       </nav>
       <div class="container p-4">
       {%block content%}
+
       {% endblock %}
 </body>
 </html>

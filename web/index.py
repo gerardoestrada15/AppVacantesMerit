@@ -1,16 +1,20 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,request,url_for,session
+import sqlite3
 
 app=Flask(__name__)
 
 @app.route('/')
 
+#def login():
+    #return render_template('prueba.html')
+
 def hola():
     return render_template('home.html')
     
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
+@app.route('/adminvacantes')
+def adminvacantes():
+    return render_template('adminvacantes.html')
 
 @app.route('/admincandidatos')
 def admincandidatos():
