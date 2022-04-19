@@ -8,8 +8,12 @@ app=Flask(__name__)
 #def login():
     #return render_template('prueba.html')
 
-def hola():
-    return render_template('home.html')
+
+def login():
+    return render_template('login.html')
+
+def msjpostulantes():
+    return render_template('msjpostulantes.html')
     
 
 @app.route('/adminvacantes')
