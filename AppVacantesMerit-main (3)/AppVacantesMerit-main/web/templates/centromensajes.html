@@ -1,0 +1,98 @@
+{%extends "layout.html"%}
+{% block content%}
+<div class="mx-auto">
+<div class="gap-4">
+  <h1>Centro De Mensajes</h1>
+  </div>
+ <br>
+  <div class="d-grid gap-4 col-1 position-absolute top-50 start-10 translate-middle"></div>
+    <br>
+    <br>
+    <br>
+      <button class="btn btn-danger" type="button">Agregar Respuestas</button>
+      <br>
+      <br>
+      <br>
+      <button class="btn btn-danger" type="button">Editar Respuestas</button>
+      <br>
+      <br>
+      <br>
+      <button class="btn btn-danger" type="button">Eliminar Respuestas</button>
+    </div>
+<style type="text/css">
+table{
+text-align: center;
+position: absolute;
+left: 10%;
+
+}
+td{
+  position: absolute;
+  width: 40%;
+}
+input{
+  position: absolute;
+  top:34%;
+  left:78%;
+  width: 19%;
+  height: 20%;
+  text-align: left;
+
+  text-align: end;
+}
+textarea{
+position: absolute;
+  top:39%;
+  left:78%;
+  width: 19%;
+  height: 23%;
+  resize:none
+}
+label{
+  position: absolute;
+  left:78%;
+  top:34%
+}
+button{
+  position: absolute;
+  left:3%;
+}
+</style>
+<table class="table table-light table-bordered position-absolute top-50 start-50 translate-middle caption-top w-50 p-3 ">
+<caption>Respuestas Existentes</caption>
+  <tr>
+
+    <th scope="col">Mensajes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    
+    <td style=href="#" class="list-group-item alig-item-right list-group-item-action" aria-current="true">Hola Juan, En este momento tu kardex no tiene el perfil que buscamos. Te agradecemos…</td>
+
+  </tr>
+  <tr>
+
+    <td style=href="#" class="list-group-item alig-item-right list-group-item-action" aria-current="true">Hola Juan, Nos complace informarte que te haremos una entrevista próximamente</td>
+
+  </tr>
+  <tr>
+
+    <td style=href="#" class="list-group-item alig-item-right list-group-item-action" aria-current="true">Hola Juan, Tu registro de  puntualidad no te permite aplicar para este puesto </td>
+
+    <tr>
+    <tr>
+
+    <td style=href="#" class="list-group-item alig-item-right list-group-item-action" aria-current="true">Hola Juan, Tu historial académico no te califica para este puesto. </td>
+
+    <tr>
+    </tr>
+</tbody>
+</table>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Que Deseas Escribir?</label>
+  <textarea name="ejemplo" rows="50" cols="50"></textarea>
+  <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+</div>
+
+{%endblock%}
