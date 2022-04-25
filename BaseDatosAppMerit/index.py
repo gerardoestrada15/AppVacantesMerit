@@ -30,7 +30,7 @@ def add_contact():
         cur.execute('INSERT INTO contacts (vacante, descripcion,originario) VALUES (%s,%s,%s)',
         (vacante,descripcion,originario))
         mysql.connection.commit()
-        flash('Contacto Añadido Correctamente')
+       
         return redirect(url_for('Index'))
 
 @app.route('/edit/<id>', methods = ['POST', 'GET'])
@@ -56,7 +56,7 @@ def update_contact(id):
                 originario = %s
             WHERE id = %s
         """, (vacante,descripcion,originario, id))
-        flash('Vacante Actualizada Correctamente')
+        
         mysql.connection.commit()
         return redirect(url_for('Index'))
 
@@ -65,7 +65,7 @@ def delete_contact(id):
     cur = mysql.connection.cursor()
     cur.execute('DELETE FROM contacts WHERE id = {0}'.format(id))
     mysql.connection.commit()
-    flash('Vacante Removida Correctamente')
+    
     return redirect(url_for('Index'))
 
 @app.route('/añadir/<id>', methods = ['POST', 'GET'])
