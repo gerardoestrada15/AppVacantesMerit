@@ -27,8 +27,28 @@
         .btn{
           width: 100px;
         }
+       
+        .btn1{
+          width: 100px;
+          left: 100px;
+          position: absolute;
+          text-align: center;
+          height: 35px;
+          z-index: 1;
+        }
+        .rectan{
+          width: 150px;
+          height: 9999999999999999999999999999999999999999999px;
+          top: 160px;
+          position: absolute;
+          background: #e4e2e2;
+          z-index: 2;
+        
+        }
+
     
       </style>
+      <div class="rectan"></div>
     <div class="col-md-7">
       <table class="table table-striped table-hover table-bordered table-sm bg-white">
         <thead>
@@ -52,11 +72,10 @@
             <td>
               <a href="/edit/{{contact.0}}" class="btn btn-secondary">Editar</a>
               <a href="/delete/{{contact.0}}" class="btn btn-danger btn-delete">Eliminar</a>
-              <a href="/añadir/{{contact.0}}" class="btn btn-dark">Añadir</a>
+              <a href="/añadir/{{contact.0}}" class="btn1 btn-dark">Añadir</a>
           {% endfor %}
             </td>
-          </tr>
-          
+          </tr>  
         </tbody>
       </table>
     </div>
